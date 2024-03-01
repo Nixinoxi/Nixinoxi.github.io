@@ -1,75 +1,39 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <title> CSDC105 - Group 2 Activity </title>
-    <style>
-        body {
-            border: 1px solid;
-            padding-bottom: 20px;
-        }
-    </style>
-</head>
-<!--
-    Group 2 - Michael Daanoy (Team Leader)
-              Patrick Estrella
-              Nicole Castillo
-              Joshua Castañeda
--->
+
+<html>
+    <head>
+        <title> Registration Form</title>
+    </head>
 
 
-<body>
-    <h1> Registration Form </h1>
+    <body>
+        <h1>Registration Form</h1>
         <form>
-        <!-- This section is written by Michael Daanoy-->
-            <label>First Name:</label>
-            <input type="text" name="first_name">
+            First Name: <input type="text" name="fname">
+            <br>
+            Last Name: <input type="text" name="lname">
+            <br>
+            Nick Name: <input type="text" name="nname">
+            <br>
+            Email: <input type="email" name="email">
+            <br>
+            Password: <input type="password" name="pass">
+            <br>
+            Date of Birth: <input type="date" name="bday">
             <br>
 
-
-            <label>Last Name:</label>
-            <input type="text" name="last_name">
+            Gender: <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="female">
+                    <label for="female">Other</label>
             <br>
-
-
-        <!-- This section is written by Nicole Castillo -->
-            <label>Nick Name:</label>
-            <input type="text" name="nickname"/>
+            Mobile: <input type="number" name="num">
             <br>
-
-
-            <label>Email:</label>
-            <input type="email" name= "email"/>
+            Address: <textarea name="Address" cols="30" rows="10"></textarea>
             <br>
-
-
-            <label>Password:</label>
-            <input type="password" name="password"/>
-            <br>
-
-
-        <!-- This section is written by Joshua Castaneda -->
-            <label for="Birth">Date of Birth:</label>
-            <input type="date" id="Birtday" value="Birtday">
-            <br>
-
-
-            <label>Gender:</label>
-            <input type="radio" name="gender" id="Male">
-            <label>Male</label>
-            <input type="radio" name="gender" id="Female">
-            <label>Female</label>
-            <br>
-
-
-            <label>Mobile:</label>
-            <input type="tel" name="Mobile">
-            <br>
-
-
-        <!-- This section is written by Patrick Estrella -->
-            <label>Address <textarea cols="30" rows="10"></textarea></label>
-            <br>
-            <input type="submit" name="submit"> <input type="reset" name="reset">
+            <input type="submit"> <input type="reset">
         </form>
-</body>
+    </body>
 </html>
